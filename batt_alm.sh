@@ -5,7 +5,7 @@ echo $batt_stat $(date)
 
 while true;
 do
-if [[ $batt_stat > 90 ]];
+if [[ $batt_stat -gt 90 ]];
 then
 	echo "Fully charged"
 	say -v Samantha "Battery fully charged. Please turn off AC adaptor."

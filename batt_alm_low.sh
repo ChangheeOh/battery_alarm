@@ -5,7 +5,7 @@ echo $batt_stat $(date)
 
 while true;
 do
-if [[ $batt_stat < 10 ]];
+if [[ $batt_stat -lt 10 ]];
 then
 	echo "Battery is too low. Please charge it immediately."
 	say -v Samantha "Battery is too low. Please charge it immediately."
