@@ -1,6 +1,6 @@
 #!/bin/bash
 
-batt_stat=$(pmset -g ps | awk '{print $3}' | awk 'NR > 1' | sed -e 's/%/ /g' | sed -e 's/;/ /g')
+batt_stat=$(pmset -g ps | awk '{print $3}' | awk 'NR == 2' | sed -e 's/%/ /g' | sed -e 's/;/ /g')
 echo $batt_stat $(date)
 
 while true;
@@ -14,7 +14,7 @@ then
 else
 	echo "Charging in progress"
 	sleep 30
-	batt_stat=$(pmset -g ps | awk '{print $3}' | awk 'NR > 1' | sed -e 's/%/ /g' | sed -e 's/;/ /g')
+	batt_stat=$(pmset -g ps | awk '{print $3}' | awk 'NR == 2' | sed -e 's/%/ /g' | sed -e 's/;/ /g')
 	echo $batt_stat $(date)
 fi
 done
