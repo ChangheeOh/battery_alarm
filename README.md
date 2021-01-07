@@ -12,3 +12,6 @@ e.g.
   # 90 : Threshold value for full battery alarm
   # 60 : Update frequency in second
 ```
+
+If you are using macOS, you can create a Automator application workflow to run the above shell script and register it into startup items.
+It will be monitoring the battery status and repeatedly warns you charge or turn off your charging by voice.
