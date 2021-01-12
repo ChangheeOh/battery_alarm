@@ -24,3 +24,5 @@ ln -s /Library/Services/batt_alm_all.sh /usr/local/bin/batt_check
 # After run the following command, 'ScriptMonitor' will be displayed in the menu bar and you can stop it, if it's required.
 batt_check 10 90 60&
 ```
+
+__I found that if this shell script runs all the time, it could make battery consumed faster. To use this in everyday use, needs be improved.__
