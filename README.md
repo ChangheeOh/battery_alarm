@@ -25,4 +25,4 @@ ln -s /Library/Services/batt_alm_all.sh /usr/local/bin/batt_check
 batt_check 10 90 60&
 ```
 
-__I found that if this shell script runs all the time, it could make battery consumed faster. To use this in everyday use, needs be improved.__
+__I found that if this shell script runs all the time, it could make battery consumed faster. To use this in everyday life, needs be improved.__
